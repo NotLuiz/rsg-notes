@@ -7,6 +7,7 @@
 
 # Dependancies
 - rsg-core
+- rsg-inventory
 
 # Installation
 - ensure that the dependancies are added and started
