@@ -2,7 +2,7 @@
 - discord : https://discord.gg/s5uSk56B65
 - github : https://github.com/Rexshack-RedM
 
-# Creator & Editor 
+# Creator
 - discord : NotSarin#0001
 
 # Dependancies
