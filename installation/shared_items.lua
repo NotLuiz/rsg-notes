@@ -1,0 +1,2 @@
+    ['notes'] 		 = {['name'] = 'notes', 	    ['label'] = 'Notepad', 		['weight'] = 100,  ['type'] = 'item', ['image'] = 'notepad.png', 	 ['unique'] = true,  ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil,	 ['level'] = 0,	['description'] = 'A nice message for you'},
+	['notes_empty']  = {['name'] = 'notes_empty', 	['label'] = 'Notepad', 		['weight'] = 100,  ['type'] = 'item', ['image'] = 'notepad.png', 	 ['unique'] = true, ['useable'] = true,  ['shouldClose'] = true, ['combinable'] = nil,	 ['level'] = 0,	['description'] = 'Write a note'},
