@@ -1,7 +1,7 @@
 local RSGCore = exports['rsg-core']:GetCoreObject()
 
-RegisterNetEvent('sr-notes:SaveNote')
-AddEventHandler('sr-notes:SaveNote', function(mensage)
+RegisterNetEvent('rsg-notes:SaveNote')
+AddEventHandler('rsg-notes:SaveNote', function(mensage)
   local src = source
   local Player = RSGCore.Functions.GetPlayer(src)
   local info = {
@@ -21,8 +21,8 @@ RSGCore.Functions.CreateUseableItem('notes', function(source, item)
   TriggerClientEvent('sr-notes:OpenNotepadGuiRead', source, item.info.mensage)
 end)
 
-RegisterServerEvent('sr-notes:server:removeitem')
-AddEventHandler('sr-notes:server:removeitem', function(item, amount)
+RegisterServerEvent('rsg-notes:server:removeitem')
+AddEventHandler('rsg-notes:server:removeitem', function(item, amount)
     local src = source
     local Player = RSGCore.Functions.GetPlayer(src)
     Player.Functions.RemoveItem(item, amount)

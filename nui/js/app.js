@@ -1,10 +1,10 @@
 var ownerdNotepad, notepadreader;
 document.onkeyup = function (data) {
   if (data.which == 27) {
-    $.post("http://sr-notes/escape", JSON.stringify({}));
+    $.post("http://rsg-notes/escape", JSON.stringify({}));
     if (notepadreader == true) {
       let x = document.getElementById("p1").value;
-      $.post("http://sr-notes/updating", JSON.stringify({ text: x }));
+      $.post("http://rsg-notes/updating", JSON.stringify({ text: x }));
       $("#main").fadeOut();
       $("#main").css("display", "none");
       notepadreader = false;
@@ -20,7 +20,7 @@ document.onkeyup = function (data) {
 function dropNotepad() {
   let x = document.getElementById("p1").value;
   if (x !== "") {
-    $.post("http://sr-notes/save", JSON.stringify({ text: x }));
+    $.post("http://rsg-notes/save", JSON.stringify({ text: x }));
     $("#main").fadeOut();
     document.getElementById("p1").value = "";
     $("#main").css("display", "none");
